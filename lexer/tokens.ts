@@ -9,6 +9,7 @@ export enum TokenType {
 	Minus,
 	Star,
 	Dash,
+	Slash,
 	SemiColon,
 	EOF,
 }

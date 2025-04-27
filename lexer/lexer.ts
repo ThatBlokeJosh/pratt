@@ -10,7 +10,7 @@ export class Lexer {
 	}
 
 	TokenizeLine(line: string, line_number: number): Token[] {
-		line = line.replace(new RegExp(" ", "g"), "")
+		line = line.replace(new RegExp(" ", "g"), "").trim()
 		let tokens: Token[] = [];
 
 		while (line.length > 0) {
